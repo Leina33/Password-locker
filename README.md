@@ -21,10 +21,7 @@ To view the website
 
 ## Technologies Used
 
-1. Angular HTML : Templates - used for creating markup pages and user interface.
-3. Github API generated
-4. Custom CSS - used to style Mark Up pages/User Interface.
-5. Bootstrap library for CSS.
+1. Python3.6
 
 
 
@@ -36,7 +33,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 
 ## License
-[MIT](https://choosealicense.com/licenses/mit/)
-Choose a License
-MIT License
-A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
+[MIT]@Dominic Rutto 2019
