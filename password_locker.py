@@ -61,12 +61,12 @@ def main():
 	while True:
 		print(' ')
 		print("-"*60)
-		print('Use these codes to navigate: \n ca-Create an Account \n li-Log In \n ex-Exit')
+		print('Use these codes to navigate: \n cr-Create an Account \n li-Log In \n ex-Exit')
 		short_code = input('Enter a choice: ').lower().strip()
 		if short_code == 'ex':
 			break
 
-		elif short_code == 'ca':
+		elif short_code == 'cr':
 			print("-"*60)
 			print(' ')
 			print('To create a new account:')
