@@ -12,7 +12,7 @@ class TestUser(unittest.TestCase):#a sub-class that inherits methods
 		'''
 		Function to create a user account before each test
 		'''
-		self.new_user = User('Mary','Ng\'ang\'a','pswd100')
+		self.new_user = User('dominic','rutto,'pass33')
 
 	def test__init__(self):
 		'''
