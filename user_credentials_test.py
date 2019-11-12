@@ -100,7 +100,7 @@ class TestCredentials(unittest.TestCase):
 		Test to check if the find_by_site_name method returns the correct credential
 		'''
 		self.new_credential.save_credentials()
-		twitter = Credential('Jane','Twitter','maryjoe','pswd100')
+		twitter = Credential('Dominic','Twitter','Dominic_Rutto','pass33')
 		twitter.save_credentials()
 		credential_exists = Credential.find_by_site_name('Twitter')
 		self.assertEqual(credential_exists,twitter)
@@ -110,14 +110,14 @@ class TestCredentials(unittest.TestCase):
 		Test to check if the copy a credential method copies the correct credential
 		'''
 		self.new_credential.save_credentials()
-		twitter = Credential('Jane','Twitter','maryjoe','pswd100')
+		twitter = Credential('Dominic','Twitter','Dominic_Rutto','pass33')
 		twitter.save_credentials()
 		find_credential = None
 		for credential in Credential.user_credentials_list:
 				find_credential =Credential.find_by_site_name(credential.site_name)
 				return pyperclip.copy(find_credential.password)
 		Credential.copy_credential(self.new_credential.site_name)
-		self.assertEqual('pswd100',pyperclip.paste())
+		self.assertEqual('pass33',pyperclip.paste())
 		print(pyperclip.paste())
 
 if __name__ == '__main__':
