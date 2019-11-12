@@ -11,7 +11,7 @@ def create_user(first_name,last_name,password):
 
 def save_user(user):
 	'''
-	Function to save a new user account
+	Function to save a new user accounts
 	'''
 	User.save_user(user)
 
