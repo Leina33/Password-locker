@@ -41,7 +41,7 @@ class TestCredentials(unittest.TestCase):
 		'''
 		self.new_user = User('dominic','rutto,'pass33')
 		self.new_user.save_user()
-		user2 = User('Ken','Ng\'ang\'a','pswd100')
+		user2 = User('ken','asati,'pass33')
 		user2.save_user()
 
 		for user in User.users_list:
@@ -55,16 +55,16 @@ class TestCredentials(unittest.TestCase):
 		'''
 		Function to create an account's credentials before each test
 		'''
-		self.new_credential = Credential('Mary','Facebook','maryjoe','pswd100')
+		self.new_credential = Credential('dominic','Facebook','domie','pass33')
 
 	def test__init__(self):
 		'''
 		Test to if check the initialization/creation of credential instances is properly done
 		'''
-		self.assertEqual(self.new_credential.user_name,'Mary')
+		self.assertEqual(self.new_credential.user_name,'dominic')
 		self.assertEqual(self.new_credential.site_name,'Facebook')
-		self.assertEqual(self.new_credential.account_name,'maryjoe')
-		self.assertEqual(self.new_credential.password,'pswd100')
+		self.assertEqual(self.new_credential.account_name,'domie')
+		self.assertEqual(self.new_credential.password,'pass33')
 
 	def test_save_credentials(self):
 		'''
