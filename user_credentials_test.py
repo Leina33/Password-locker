@@ -71,17 +71,11 @@ class TestCredentials(unittest.TestCase):
 		Test to check if the new credential info is saved into the credentials list
 		'''
 		self.new_credential.save_credentials()
-		twitter = Credential('Jane','Twitter','maryjoe','pswd100')
+		twitter = Credential('Dominic','Twitter','Dominic_Rutto','pass33')
 		twitter.save_credentials()
 		self.assertEqual(len(Credential.credentials_list),2)
 
-	# def test_generate_password(self):
-	# 	'''
-	# 	Test to check if the generate password generates 8 character long alphanumeric numbers
-	# 	'''
-	# 	self.twitter = Credential('Twitter','maryjoe','')
-	# 	self.twitter.password = generate_password()
-	# 	self.assertEqual()
+	
 
 	def tearDown(self):
 		'''
@@ -95,9 +89,9 @@ class TestCredentials(unittest.TestCase):
 		Test to check if the display_credentials method, displays the correct credentials.
 		'''
 		self.new_credential.save_credentials()
-		twitter = Credential('Jane','Twitter','maryjoe','pswd100')
+		twitter = Credential('Dominic','Twitter','Dominic_Rutto','pass33')
 		twitter.save_credentials()
-		gmail = Credential('Jane','Gmail','maryjoe','pswd200')
+		gmail = Credential('Dominic','Gmail','dominickrutto@gmail.com','pass33')
 		gmail.save_credentials()
 		self.assertEqual(len(Credential.display_credentials(twitter.user_name)),2)
 
