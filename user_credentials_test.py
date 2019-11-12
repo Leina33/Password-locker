@@ -29,7 +29,7 @@ class TestUser(unittest.TestCase):#a sub-class that inherits methods
 		self.new_user.save_user()
 		self.assertEqual(len(User.users_list),1)
 
-class TestCredentials(unittest.TestCase):
+class TestCredentials(unittest.TestCase):#  a sub class
 	'''
 	Test class that defines test cases for the credentials class behaviours.
 	Args:
@@ -121,4 +121,4 @@ class TestCredentials(unittest.TestCase):
 		print(pyperclip.paste())
 
 if __name__ == '__main__':
-	unittest.main(verbosity=2)
+	unittest.main(verbosity=2) 
