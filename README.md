@@ -10,8 +10,9 @@ Dominic K. Rutto
 4. Create new account
 5. store existing credentials
 6. copy credentials to clipboard (paste)
-  Enter choice
-2 Output: Choice entered
+7. Enter choice
+ 8. Output: Choice entered
+
 
 ## Installation
 To view the website
