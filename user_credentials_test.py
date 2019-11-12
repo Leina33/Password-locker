@@ -16,7 +16,7 @@ class TestUser(unittest.TestCase):#a sub-class that inherits methods
 
 	def test__init__(self):
 		'''
-		Test to if check the initialization/creation of user instances is properly done
+		Test to if check the initialization properly 
 		'''
 		self.assertEqual(self.new_user.first_name,'dominic')
 		self.assertEqual(self.new_user.last_name,'rutto')
