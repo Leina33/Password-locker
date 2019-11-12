@@ -2,7 +2,7 @@ import unittest
 import pyperclip
 from user_credentials import User, Credential
 
-class TestUser(unittest.TestCase):
+class TestUser(unittest.TestCase):#a sub-class that inherits methods
 	'''
 	Test class that defines test cases for the user class behaviours.
 	Args:
