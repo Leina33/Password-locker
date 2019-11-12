@@ -55,6 +55,7 @@ def copy_credential(site_name):
 	'''
 	return Credential.copy_credential(site_name)
 
+#the main body 
 def main():
 	print(' ')
 	print('Hi? Please enter your personal details.')
